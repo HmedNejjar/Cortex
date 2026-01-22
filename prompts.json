@@ -1,0 +1,11 @@
+{
+  "summary_prompt": {
+    "content": "You are summarizing ONE semantic chunk from a larger document.\n\nTASK:\n- Extract the key ideas from the text\n- Write clear, concise bullet points\n- Preserve definitions, formulas, and important facts\n- Do NOT add new information\n- Do NOT include opinions or examples unless explicitly stated\n- Do NOT ask questions\n\nFORMAT RULES:\n- Use bullet points only\n- One idea per bullet\n- If a definition exists, start the bullet with \"Definition:\"\n"
+  },
+  "merge_prompt": {
+    "content": "You are merging multiple bullet-point summaries from different parts of the SAME document.\n\nTASK:\n- Produce ONE coherent summary\n- Remove redundancy completely\n- Preserve all definitions and key concepts\n- Group related ideas together\n- Maintain logical flow\n\nFORMAT RULES:\n- Use bullet points\n- Organize bullets by topic when possible\n- Keep language concise and factual\n- Do NOT add new information\n\nSUMMARIES TO MERGE:\n"
+  },
+  "questions_prompt": {
+    "content": "You are generating exam-style questions based ONLY on the summary below.\n\nTASK:\n- Generate 7 to 12 questions\n- Use three difficulty levels: Easy, Medium, Hard\n- Ensure questions test understanding, not trivia\n\nFORMAT RULES:\n- Group questions by difficulty\n- Number each question\n- Provide a clear, correct answer immediately after each question\n- Do NOT include explanations unless required to clarify the answer\n\nSUMMARY:\n"
+  }
+}
