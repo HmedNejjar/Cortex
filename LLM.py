@@ -16,7 +16,7 @@ def collect_stream(response) -> str:
     full_text = ""
     for chunk in response:
         # Extract message content from each chunk
-        full_text += chunk.message.content
+        full_text += chunk["message"]['content']
     return full_text
 
 def run(prompt: str, text: str, model=MODEL, stream=True):

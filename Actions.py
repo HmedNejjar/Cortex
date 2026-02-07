@@ -45,7 +45,7 @@ def merge_summaries(summaries: List[str]):
         summaries: List of individual chunk summaries to merge
         
     Returns:
-        Tuple of (streaming_response, merged_summary_text)
+        Streaming response object from the LLM (generator-like).
         
     Raises:
         ActionError: If no summaries provided or merge produces empty output
